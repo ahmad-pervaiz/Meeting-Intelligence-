@@ -1,0 +1,40 @@
+# Backend Dependencies
+# Install PyTorch CPU first if preferred:
+# pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+python-multipart>=0.0.9
+sqlalchemy>=2.0.28
+
+# Speech & Audio
+faster-whisper>=1.0.0
+numpy>=1.26.0
+scipy>=1.12.0
+# pyannote.audio is optional for production with HF_TOKEN; local VAD/energy fallback included
+# pyannote.audio>=3.1.1
+
+# Embeddings & RAG
+sentence-transformers>=2.5.0
+chromadb>=0.4.24
+
+# Cloud LLM Free Tiers
+groq>=0.5.0
+google-generativeai>=0.4.1
+
+# PDF Generation
+weasyprint>=61.0
+jinja2>=3.1.3
+
+# Email & HTTP
+resend>=0.8.0
+httpx>=0.27.0
+requests>=2.31.0
+python-dotenv>=1.0.1
+
+# Testing
+pytest>=8.1.0
+pytest-asyncio>=0.23.5
+email-validator>=2.0.0
